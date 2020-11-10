@@ -57,7 +57,7 @@ rotated = imutils.rotate(image, 60)
 
 imutlis.rotate pozwala na rotacje obrazu domyślnie wobec środka
 
-![](C:\Users\kubu1\PycharmProjects\lab1\zad9\images\image-rotated.jpg)
+![Rotacja](C:\Users\kubu1\PycharmProjects\lab1\zad9\images\image-rotated.jpg)
 
 
 
@@ -73,7 +73,7 @@ Funkcja zwiększa także wymiary obrazu aby cały zmieścił się w oknie
 
 
 
-![](C:\Users\kubu1\PycharmProjects\lab1\zad9\images\image-rotated-inbound.jpg)
+![Rotacja](C:\Users\kubu1\PycharmProjects\lab1\zad9\images\image-rotated-inbound.jpg)
 
 
 
@@ -89,7 +89,7 @@ wysokość i szerokość kernela odpowiada za moc rozmycia, rozmiary mogą się 
 
 
 
-![](C:\Users\kubu1\PycharmProjects\lab1\zad9\images\image-blurred.jpg)
+![Rozmycie](C:\Users\kubu1\PycharmProjects\lab1\zad9\images\image-blurred.jpg)
 
 
 
@@ -112,7 +112,7 @@ W linii i prostokącie należy podać punk startowy i końcowy
 
 W tekście podaje się punkt startowy, font i rozmiar. Font można wybrać z biblioteki openCV lub inny używając innych bibliotek np PIL
 
-![](C:\Users\kubu1\PycharmProjects\lab1\zad9\images\image-painted.jpg)
+![Rysowanie](C:\Users\kubu1\PycharmProjects\lab1\zad9\images\image-painted.jpg)
 
 
 
@@ -124,7 +124,7 @@ gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 Metoda cvtColor pozwala na zmianę kolorów w zależności od podanej przestrzeni kolorów, w tym przypadku w odcienie szarości
 
-![](C:\Users\kubu1\PycharmProjects\lab1\zad9\images\pokemons-gray.jpg)
+![Zamiana](C:\Users\kubu1\PycharmProjects\lab1\zad9\images\pokemons-gray.jpg)
 
 
 
@@ -138,7 +138,7 @@ edged = cv2.Canny(gray, 50, 150)
 
 Algorytm Canny pozwala na wykrycie krawędzi w obrazach, jako argumenty podaję się niski i wysoki próg dla pikseli. Oblicza się gradient dla każdego piksela i jeśli gradient dla danego piksela w wykrytm wcześniej progu będzie większy niż wysoki próg zostanie on zaliczony do krawędzi, a niższy niż niski próg zostanie odrzucony
 
-![](C:\Users\kubu1\PycharmProjects\lab1\zad9\images\pokemons-edged.jpg)
+![Krawędzie](C:\Users\kubu1\PycharmProjects\lab1\zad9\images\pokemons-edged.jpg)
 
 
 
@@ -154,7 +154,7 @@ thresh = cv2.threshold(gray, 240, 255, cv2.THRESH_BINARY_INV)[1]
 
 Funkcja pozwala na uzyskanie obrazu w 2 kolorach z obrazu w odcieniach szarości w celu lub odfiltrowaniu pixeli ze zbyt małymi lub dużymi wartościami. Piksele z mniejszą wartością od podanego w argumencie progu w tym przypadku 240 są zamieniane w kolor biały a reszta w kolor czarny
 
-![](C:\Users\kubu1\PycharmProjects\lab1\zad9\images\pokemons-thresh.jpg)
+![thresholding](C:\Users\kubu1\PycharmProjects\lab1\zad9\images\pokemons-thresh.jpg)
 
 
 
@@ -180,7 +180,7 @@ cv2.drawContours(output, cnts, -1, (255, 0, 0), 2)
 
 metoda rysuje kontury, jako argumenty podaje się obraz wejściowy, listę wykrytych konturów, indeks kontury do rysowania (jeśli ujemny rysuje wszystkie), kolor i grubość linii
 
-![](C:\Users\kubu1\PycharmProjects\lab1\zad9\images\pokemons-contours.jpg)
+![kontury](C:\Users\kubu1\PycharmProjects\lab1\zad9\images\pokemons-contours.jpg)
 
 
 
@@ -197,7 +197,7 @@ mask = cv2.erode(mask, None, iterations=3)
 
 Metoda pozwala na usunięcie szumów powstałych w procesie tresholdingu 
 
-![](C:\Users\kubu1\PycharmProjects\lab1\zad9\images\pokemons-eroded.jpg)
+![erozja](C:\Users\kubu1\PycharmProjects\lab1\zad9\images\pokemons-eroded.jpg)
 
 
 
@@ -223,4 +223,4 @@ output = cv2.bitwise_and(image, image, mask=mask)
 
 metoda bitwise_and oblicza logiczną operacje and z 2 macierzy, podanie maski pozwala na określenie elementów wyjściowej macierzy, które mają zostać zmienione. 
 
-![](C:\Users\kubu1\PycharmProjects\lab1\zad9\images\pokemons-bitwise.jpg)
+![dylatacja](C:\Users\kubu1\PycharmProjects\lab1\zad9\images\pokemons-bitwise.jpg)
