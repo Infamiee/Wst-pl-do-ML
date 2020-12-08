@@ -1,4 +1,5 @@
 pikachu
+pikachu
 porygon2
 porygon-z
 primeape
@@ -7,3 +8,4 @@ probopass
 psyduck
 pumpkaboo
 purrloinpupitar
+pikachu
