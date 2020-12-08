@@ -1,6 +1,6 @@
 #### Otwieranie i zamykanie plików
 
-[files/first_file_kowalczyk.txt](Plik tekst)
+[Plik tekstowy](files/first_file_kowalczyk.txt)
 
 ##### Otwieranie za pomocą metody open
 
