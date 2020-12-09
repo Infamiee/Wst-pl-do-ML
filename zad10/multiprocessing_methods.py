@@ -8,8 +8,8 @@ def cpu_bound_multiprocessing(number):
 
 
 def save_images_multiprocessing(link):
-  filename = link.split('/')[6].split('.')[0]
-  fileformat = link.split('/')[6].split('.')[1]
+  filename = link.split('/')[4]
+  fileformat = 'jpg'
   request.urlretrieve(link, "pictures/{}.{}".format(filename, fileformat))
 
 session = None
